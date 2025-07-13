@@ -7,3 +7,11 @@ INSERT INTO STATION VALUES
 (3, 'Mumbai',    'Maharashtra',    18.9, 46.2),
 (4, 'Bengaluru', 'Karnataka',      12.9, 47.1),
 (5, 'Pune',      'Maharashtra',    18.5, 44.0);
+
+select * from STATION;
+
+select * from STATION where LAT>39.7;
+
+select ID, CITY, STATE from STATION;
+
+select ID, CITY, STATE from STATION where LONGT>45;
