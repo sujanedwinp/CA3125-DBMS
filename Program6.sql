@@ -10,10 +10,10 @@ insert into STATS values
 (1, 'January', 55.0, 0.5),
 (1, 'July', 90.0, 6.0),
 (2, 'January', 75.0, 0.2),
-(2, 'July', 88.0, 22.0)
+(2, 'July', 88.0, 22.0);
 
 create view STATS_CON as
-    select ID, MONTH, round((TEMPF -32) *5 /9, 2) as TEMPC, round(RAINI *2.54, 2) as RAINCM from STATS
+    select ID, MONTH, round((TEMPF -32) *5 /9, 2) as TEMPC, round(RAINI *2.54, 2) as RAINCM from STATS;
 
 alter table STATS add column RAIN double;
 
